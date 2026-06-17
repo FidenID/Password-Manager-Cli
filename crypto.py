@@ -3,6 +3,7 @@ import hashlib
 import os
 
 def get_or_create_key(key_file='.key'):
+    key_file = str(key_file)
     if os.path.exists(key_file):
         with open(key_file, 'r') as f:
             return f.read().strip()

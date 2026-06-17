@@ -2,12 +2,16 @@
 import json
 import sys
 import os
+from pathlib import Path
 from crypto import get_or_create_key, encrypt, decrypt
 
-DATA_FILE = 'passwords.enc'
+# Selalu simpan data di folder program
+PROGRAM_DIR = Path(__file__).parent.absolute()
+DATA_FILE = PROGRAM_DIR / 'passwords.enc'
+KEY_FILE = PROGRAM_DIR / '.key'
 
 def load_data(key):
-    if not os.path.exists(DATA_FILE):
+    if not DATA_FILE.exists():
         return {}
     with open(DATA_FILE, 'r') as f:
         enc = f.read()
@@ -182,6 +186,6 @@ class PasswordShell:
                 print(f"Error: {e}")
 
 if __name__ == '__main__':
-    key = get_or_create_key()
+    key = get_or_create_key(KEY_FILE)
     shell = PasswordShell(key)
     shell.run()
