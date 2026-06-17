@@ -4,6 +4,8 @@ Password manager sederhana dan aman untuk menyimpan password, token, dan data se
 
 ## 📦 Instalasi
 
+### Linux / macOS
+
 ```bash
 # Clone repository
 git clone https://github.com/FidenID/Password-Manager-Cli.git
@@ -18,6 +20,22 @@ source ~/.config/fish/config.fish  # untuk Fish shell
 source ~/.bashrc                   # untuk Bash
 # atau
 source ~/.zshrc                    # untuk Zsh
+
+# Selesai! Sekarang bisa dipakai dari mana aja
+pm
+```
+
+### Windows
+
+```powershell
+# Clone repository
+git clone https://github.com/FidenID/Password-Manager-Cli.git
+cd Password-Manager-Cli
+
+# Jalankan installer (PowerShell sebagai Administrator)
+.\install.ps1
+
+# Restart terminal/PowerShell
 
 # Selesai! Sekarang bisa dipakai dari mana aja
 pm
