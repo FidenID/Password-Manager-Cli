@@ -1,0 +1,12 @@
+# Data sensitif - jangan di-commit!
+.key
+passwords.enc
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE
+.vscode/
+.idea/
