@@ -2,6 +2,27 @@
 
 Password manager sederhana dan aman untuk menyimpan password, token, dan data sensitif lainnya dengan enkripsi.
 
+## 📦 Instalasi
+
+```bash
+# Clone repository
+git clone https://github.com/FidenID/Password-Manager-Cli.git
+cd Password-Manager-Cli
+
+# Jalankan installer
+./install.sh
+
+# Reload shell config
+source ~/.config/fish/config.fish  # untuk Fish shell
+# atau
+source ~/.bashrc                   # untuk Bash
+# atau
+source ~/.zshrc                    # untuk Zsh
+
+# Selesai! Sekarang bisa dipakai dari mana aja
+pm
+```
+
 ## ✨ Fitur Utama
 
 - 🔐 **Enkripsi otomatis** - Semua data tersimpan terenkripsi
